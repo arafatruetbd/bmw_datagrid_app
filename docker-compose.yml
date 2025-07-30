@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: bmw-mysql
+    restart: always
+    ports:
+      - "3307:3306"  
+    environment:
+      MYSQL_ROOT_PASSWORD: arafat@bmw_db
+      MYSQL_DATABASE: bmw_db
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
