@@ -137,7 +137,7 @@ The React app will open in your browser (usually at `http://localhost:3000`).
 ## Demo Video & Presentation
 
 - 🔗 Demo: \[https://drive.google.com/file/d/1blnDJVSrLpLpb3M6Wpi38BmFqDDzsddj/view?usp=sharing]
-- 📑 Slides: \[https://drive.google.com/file/d/1oB29WKABRYyYj2vPv-dXNRY_nHByRwlz/view?usp=sharing]
+- 📑 Slides: \[https://drive.google.com/file/d/1NbaAWmI4j8Dg2S1fMJ4EiGMBx3SdTPEN/view?usp=sharing]
 
 ---
 
