@@ -1,6 +1,6 @@
 const fs = require("fs");
 const csv = require("csv-parser");
-const pool = require("../server/db/db");
+const pool = require("../server/src/db/db.ts").default;
 
 // Convert date from MM/DD/YY or MM/DD/YYYY to YYYY-MM-DD
 function convertDate(dateStr) {
@@ -41,7 +41,7 @@ function sanitizeRow(row) {
     .on("end", async () => {
       for (const row of results) {
         try {
-          await pool.query("INSERT INTO electric_cars SET ?", row);
+          await pool.query("INSERT INTO electric_cars SET ?", [row]);
         } catch (err) {
           console.error("Error inserting row:", err, row);
         }

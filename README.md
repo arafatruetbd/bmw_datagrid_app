@@ -23,6 +23,7 @@ This project demonstrates a full-stack web application built for BMW's IT Intern
 ### 1. Setup MySQL with Docker
 
 A Docker Compose file (`docker-compose.yml`) is included in the root directory to run MySQL in a container.
+Before running the command below, make sure Docker and Docker Compose are installed on your machine.
 
 ```bash
 docker-compose up -d
@@ -94,9 +95,14 @@ docker exec -i bmw-mysql mysql -u root -p bmw_db < path/to/schema.sql
 ### 3. Import CSV Data into Database
 
 Use the provided import script to load data from CSV into the database:
+Before running below script add .env file in project root directory.
 
 ```bash
+cd server
+yarn
+cd ..
 cd scripts
+yarn
 node importCsvToMySQL.js
 ```
 
@@ -120,7 +126,7 @@ The backend will be accessible at `http://localhost:4000`.
 
 ```bash
 cd client
-yarn 
+yarn
 yarn start
 ```
 
@@ -130,8 +136,8 @@ The React app will open in your browser (usually at `http://localhost:3000`).
 
 ## Demo Video & Presentation
 
-- 🔗 Demo: \[YouTube Link Placeholder]
-- 📑 Slides: \[Presentation Placeholder]
+- 🔗 Demo: \[https://drive.google.com/file/d/1blnDJVSrLpLpb3M6Wpi38BmFqDDzsddj/view?usp=sharing]
+- 📑 Slides: \[https://drive.google.com/file/d/1oB29WKABRYyYj2vPv-dXNRY_nHByRwlz/view?usp=sharing]
 
 ---
 
