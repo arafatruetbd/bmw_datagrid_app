@@ -61,10 +61,19 @@ CREATE TABLE electric_cars (
   id INT AUTO_INCREMENT PRIMARY KEY,
   Brand VARCHAR(100),
   Model VARCHAR(100),
-  Variant VARCHAR(100),
-  Battery_kWh FLOAT,
-  -- Add other fields as needed
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  AccelSec FLOAT,
+  TopSpeed_KmH INT,
+  Range_Km INT,
+  Efficiency_WhKm INT,
+  FastCharge_KmH INT,
+  RapidCharge VARCHAR(10),
+  PowerTrain VARCHAR(50),
+  PlugType VARCHAR(50),
+  BodyStyle VARCHAR(50),
+  Segment VARCHAR(10),
+  Seats INT,
+  PriceEuro INT,
+  Date DATE
 );
 ```
 
